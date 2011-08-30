@@ -1,0 +1,16 @@
+<?php
+	require 'parser/coffeescript.php';
+	function coffeescript_add_cs($data=NULL, $options='inline') {
+		if($options=='file') {
+			$coffee = file_get_contents($data);
+			$js = CoffeeScript\compile($coffee);
+			drupal_add_js($s,'inline');
+		}
+		else {
+			$js = CoffeeScript\compile($data);
+			drupal_add_js($js,'inline');
+		}
+		
+		return("");
+	}
+?>
