@@ -4,7 +4,7 @@ Cofeescript is an improved version of Javascript. This module allows to use Coff
 
 # Usage
 
-coffeescript_ad_cs($data,$type)
+coffeescript_add_cs($data,$type)
 
 If $type is 'file', then data is the coffeescript file. If $type is 'inline', it will compile the iniline code.
 
